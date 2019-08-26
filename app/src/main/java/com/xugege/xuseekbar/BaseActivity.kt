@@ -10,4 +10,8 @@ import android.support.v7.app.AppCompatActivity
  *   Info:
  */
 abstract class BaseActivity :AppCompatActivity() {
+    abstract fun layoutId():Int
+    fun hideToolbar() {
+        supportActionBar?.hide()
+    }
 }
