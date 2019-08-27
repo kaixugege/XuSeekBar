@@ -1,7 +1,8 @@
 package com.xugege.xuseekbar
 
-import android.content.Context
 import android.os.Bundle
+import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  *   @Author:       KaixuGege
@@ -17,6 +18,10 @@ abstract class MainBaseActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         hideToolbar()
         setContentView(layoutId())
+        initCreate()
+
     }
+
+    abstract fun initCreate()
 
 }
