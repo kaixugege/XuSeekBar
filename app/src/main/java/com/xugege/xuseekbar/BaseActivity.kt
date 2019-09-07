@@ -47,7 +47,7 @@ abstract class BaseActivity : AppCompatActivity() {
 
         override fun getPageTitle(position: Int): CharSequence? {
            val ccc =  mFragments.get(position) as ContinuousFragment
-            return  ccc.title
+            return  ccc!!.getPageTitle()
         }
 
     }
