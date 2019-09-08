@@ -1,6 +1,9 @@
 package com.xugege.xuseekbar.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 
 /**
  *   @Author:       KaixuGege
@@ -29,6 +32,14 @@ class ContinuousFragment() : BaseFragment() {
 
     fun getPageTitle(): String {
         return arguments!!.get(TITLE).toString()
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
 
