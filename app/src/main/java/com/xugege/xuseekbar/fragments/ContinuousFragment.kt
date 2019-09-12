@@ -1,6 +1,12 @@
 package com.xugege.xuseekbar.fragments
 
 import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.xugege.xuseekbar.R
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 /**
  *   @Author:       KaixuGege
@@ -10,6 +16,14 @@ import android.os.Bundle
  *   Info:
  */
 class ContinuousFragment() : BaseFragment() {
+    override fun initView(root: View) {
+
+        Log.d(this.javaClass.simpleName,"initView")
+    }
+
+    override fun layout(): Int {
+        return R.layout.fragment_continuous
+    }
 
     private var username: String = ""
     private var age: Int = 0
@@ -30,6 +44,7 @@ class ContinuousFragment() : BaseFragment() {
     fun getPageTitle(): String {
         return arguments!!.get(TITLE).toString()
     }
+
 
 
 }
