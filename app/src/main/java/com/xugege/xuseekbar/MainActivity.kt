@@ -14,6 +14,9 @@ class MainActivity : MainBaseActivity() {
         mFragments.add(ContinuousFragment.newInstance("","tab 3"))
         mFragments.add(ContinuousFragment.newInstance("","tab 4"))
 
+
+
+
         viewPager.adapter = MyPageAdapter(supportFragmentManager,mFragments)
         tabLayout.setupWithViewPager(viewPager)
         for (s in mFragments) {
