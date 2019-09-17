@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--    <item>-->
+<!--        <shape>-->
+<!--            <size-->
+<!--                android:height="8dp"-->
+<!--                android:width="8dp" />-->
+<!--&lt;!&ndash;            <solid android:color="@android:color/transparent" />&ndash;&gt;-->
+<!--        </shape>-->
+
+<!--    </item>-->
+    <item android:drawable="@drawable/action_slider_bg" android:width="16dp" android:height="16dp"/>
+</layer-list>
